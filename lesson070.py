@@ -58,9 +58,29 @@ print()
 # print()
 
 
+def func2(a, b, c):
+    print(a)
+    print(b)
+    print(c)
 
+l = [10, 20, 30]
+#func2(l)
+func2(l, 'x', 'y')
+func2(*l)
 
+print('-'*30)
+l = [10, 20, 30, 40]
+#func2(*l)
+print()
 
+def func3(a, b, c, *args):
+    print(a)
+    print(b)
+    print(c)
+    print(args)
+
+l = [10, 20, 30, 40, 50]
+func3(*l)
 
 
 
