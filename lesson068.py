@@ -190,6 +190,85 @@ d = {**d2, **d1}
 print(d)
 print()
 
+d1 = {'key1': 1, 'key2': 2}
+d2 = {'key2': 3, 'key4': 4}
+d = {'a': 1, 'b':2, **d1, 'c': 3}
+print(d)
+print()
+print('='*30)
+
+a, b, e = [1, 2, 'XY']
+print(a)
+print(b)
+print(e)
+c, d = e
+print(c)
+print(d)
+print()
+
+a, b, (c, d) = [1, 2, 'XY']
+print(a)
+print(b)
+print(c)
+print(d)
+print()
+
+a, b, (c, d, *e) = [1, 2, 'python']
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
+print('+'*20)
+l = [1, 2, 3, 4, 'python']
+a, *b, (c, d, *e) = l
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
+l = [1, 2, 3, 4, 'python']
+a, b, c, d, e = l[0], l[1:-1], l[-1][0], l[-1][1], list(l[-1][2:])
+print(l[0], l[1:-1], l[-1][0], l[-1][1], list(l[-1][2:]))
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
+print('-'*20)
+l = (1, 2, 3, 4, ['a', 'b', 'c', 'd'])
+a, *b, (c, d, *e) = l
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
+l = (1, 2, 3, 4, ['a', 'b', 'c', 'd'])
+a, b, c, d, e = l[0], l[1:-1], l[-1][0], l[-1][1], list(l[-1][2:])
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
+l = (1, 2, 3, 4, ['a', 'b', 'c', 'd'])
+a, b, c, d, e = l[0], list(l[1:-1]), l[-1][0], l[-1][1], list(l[-1][2:])
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print()
+
 
 
 
