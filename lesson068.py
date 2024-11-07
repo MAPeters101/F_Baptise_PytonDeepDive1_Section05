@@ -84,6 +84,63 @@ print(b)
 print(list(c))
 print(d)
 print()
+print('='*30)
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+l = [*l1, *l2]
+print(l)
+print()
+
+l1 = [1, 2, 3]
+s = 'abc'
+l = [*l1, *s]
+print(l)
+print()
+
+l1 = [1, 2, 3]
+s = {'x', 'y', 'z'}
+l = [*l1, *s]
+print(l)
+print()
+
+s1 = 'abc'
+s2 = 'cde'
+l = [*s1, *s2]
+print(l)
+print()
+
+s1 = 'abc'
+s2 = 'cde'
+s = {*s1, *s2}
+print(s)
+print()
+
+s = {10, -99, 3, 'd'}
+for c in s:
+    print(c)
+a, b, c, d = s
+print(a)
+print(b)
+print(c)
+print(d)
+print()
+
+s = {10, -99, 3, 'd'}
+a, b, *c = s
+print(a)
+print(b)
+print(c)
+print()
+
+s = {10, -99, 3, 'd'}
+print(list(s))
+*c, = s
+print(c)
+print()
+
+
+
 
 
 
