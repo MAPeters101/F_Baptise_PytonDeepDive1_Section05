@@ -138,6 +138,57 @@ print(list(s))
 *c, = s
 print(c)
 print()
+print('+'*30)
+
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+#s = s1 + s2
+s = {*s1, *s2}
+print(s)
+print()
+
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s = s1.union(s2)
+print(s)
+print()
+
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s3 = {5, 6, 7}
+s4 = {7, 8, 9}
+s = s1.union(s2).union(s3).union(s4)
+print(s)
+print()
+
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s3 = {5, 6, 7}
+s4 = {7, 8, 9}
+s = s1.union(s2, s3, s4)
+print(s)
+print()
+
+s1 = {1, 2, 3}
+s2 = {3, 4, 5}
+s3 = {5, 6, 7}
+s4 = {7, 8, 9}
+s = {*s1, *s2, *s3, *s4}
+print(s)
+l = [*s1, *s2, *s3, *s4]
+print(l)
+print()
+
+
+d1 = {'key1': 1, 'key2': 2}
+d2 = {'key2': 3, 'key4': 4}
+d = {*d1, *d2}
+print(d)
+d = {**d1, **d2}
+print(d)
+d = {**d2, **d1}
+print(d)
+print()
 
 
 
