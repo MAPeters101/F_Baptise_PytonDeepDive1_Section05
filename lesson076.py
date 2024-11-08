@@ -2,14 +2,14 @@ import time
 
 def time_it(fn, *args, rep=1, **kwargs):
     # print(args, kwargs)
+    start = time.perf_counter()
     for i in range(rep):
         fn(*args, **kwargs)
+    end = time.perf_counter()
+    return (end - start) / rep
 
 
-
-
-
-time_it(print, 1, 2, 3, sep=' - ', end=' ***\n', rep=5)
+print(time_it(print, 1, 2, 3, sep=' - ', end=' ***\n', rep=5))
 
 
 
