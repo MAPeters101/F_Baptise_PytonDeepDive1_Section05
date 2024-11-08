@@ -26,4 +26,28 @@ def func4(*, d):
 
 #func4(1, 2, d=100)
 func4(d=100)
+print('-'*20)
+
+def func5(a, b, *, d):
+    print(a, b, d)
+
+#func5(1, 2, 3, d=4)
+func5(1, 2, d=4)
+
+def func6(a, b=2, *args, d):
+    print(a, b, args, d)
+
+func6(1, 5, 3, 4, d='a')
+
+def func7(a, b=20, *args, d=0, e):
+    print(a, b, args, d, e)
+
+#func7(5, 4, 3, 2, 1)
+func7(5, 4, 3, 2, 1, e = 'all engines running')
+print()
+func7(0, 600, d='good morning', e = 'python')
+
+
+
+
 
