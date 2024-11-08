@@ -30,5 +30,21 @@ def compute_powers_3(n, *, start=1, end):
     # Using generator expression
     return (n**i for i in range(start, end))
 
+def compute_powers_4(n, *, start=1, end):
+    # Using generator expression
+    return list((n**i for i in range(start, end)))
+
 print(list(compute_powers_3(2, end=5)))
+print('='*50)
+print()
+
+print(time_it(compute_powers_1, 2, start=0, end=20_000, rep=5))
+print(time_it(compute_powers_2, n=2, start=0, end=20_000, rep=5))
+print(time_it(compute_powers_3, n=2, start=0, end=20_000, rep=5))
+print(time_it(compute_powers_4, n=2, start=0, end=20_000, rep=5))
+print()
+
+a = (2**i for i in range(5))
+print(a)
+print(list(a))
 
