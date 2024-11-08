@@ -46,6 +46,7 @@ def func7(a, b=20, *args, d=0, e):
 func7(5, 4, 3, 2, 1, e = 'all engines running')
 print()
 func7(0, 600, d='good morning', e = 'python')
+func7(11, 'm/s', 24, 'mph', d='unladen', e = 'swallow')
 
 
 
